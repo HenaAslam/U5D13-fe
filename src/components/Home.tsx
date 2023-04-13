@@ -50,6 +50,7 @@ const Home = () => {
     };
     socket.emit("sendMessage", { message: newMessage });
     setChatHistory([...chatHistory, newMessage]);
+    setMessage("");
   };
   return (
     <Container fluid>
